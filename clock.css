@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+/* Monomaniac One', sans-serif; */
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-image: linear-gradient(to left, #6F07DE, #64a3fc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+
+
+
+div#clock{
+    width: 37.375rem;
+    height: 14.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    border: solid 1px rgba(131, 131, 131, 0.13);
+    box-shadow: 3px 8px 10px rgba(55, 61, 66, 0.664); 
+    border-radius: 5%;
+    flex-wrap: wrap;
+   
+}
+
+div.timeSpace{
+    height: 10.625rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font: normal bold 3rem 'Press Start 2P', cursive;
+    background-color:#f1f505;
+    color: #F50545;
+    border: solid 1px rgba(129, 129, 129, 0.315);
+    box-shadow: 1px 7px 10px rgba(55, 61, 66, 0.664);
+    border-radius: 5%;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+span.time{
+    font-size: 1rem;
+}
+
+
+/* Media query  */
+/* 480px - 768px */
+@media(max-width: 768px){
+
+    html{
+        font-size: 12.5px;
+    }
+
+}
+
+/* 320px - 480px */
+@media (max-width: 480px){
+
+    html{
+        font-size: 16px;
+    }
+    
+    div#clock{
+        flex-direction: column;
+        margin: auto;
+        height: 40rem;
+        width: 18rem;
+        
+    }
+
+}
