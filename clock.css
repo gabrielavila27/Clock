@@ -77,7 +77,7 @@ span.time{
 @media (max-width: 480px){
 
     html{
-        font-size: 16px;
+        font-size: 14px;
     }
     
     div#clock{
